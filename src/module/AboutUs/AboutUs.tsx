@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import george from '../../assets/teamMembers/george-amanatidze.png';
+import george from '../../assets/teamMembers/george-amanatidze.jpg';
 import anastasia from '../../assets/teamMembers/anastasia_amanatidze.jpg';
 import { AboutUsManiSection, TeamSection, TeamMemberSection, FormSection } from './sections';
 
