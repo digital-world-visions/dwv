@@ -2,7 +2,7 @@ import { FC, useCallback, useState, useRef, useEffect } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import classNames from 'classnames';
 import { useLocation } from 'react-router-dom';
-// import axios from 'axios';
+import axios from 'axios';
 
 import { Section } from '../../../../components/Section';
 import { Button } from '../../../../components/Button';
@@ -56,7 +56,8 @@ export const FormSection: FC = () => {
     setFetch(true);
 
     try {
-      // await axios.post('http://localhost:3001/api/save-form-data1', data);
+      // await axios.post('http://localhost:3001/save-form-data', data);
+      await axios.post('https://digitalworldvisions.ae/api.php', data);
       setSuccess(true);
       reset();
     } catch (error) {
